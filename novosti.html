@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Добрые руки</title>
+		<link href="Acss.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<logo>
+			<figure>
+				<h1>ДОБРЫЕ 
+					<img id = "logo" src="logo.png" width="35" height="35"/> 
+					РУКИ
+				</h1>
+			</figure>
+		</logo>
+		<div class = "container" id = "cont">
+			<div class = "text">
+				<figure>
+					<h2>
+                        <a href="priut.html"><img id = "nazad" src="nazad.png" width="30" height="30"></a> Главные новости месяца
+                    </h2>
+				</figure>
+			</div>
+            <div class = "tablo">
+				<figure>
+					<img name = "dog" src="kotipes.jpg" width="250" height="250" align="left">
+					<p>
+                        <a href="https://ria.ru/20211004/zhivotnye-1752661113.html">
+                        Всемирный день защиты животных (World Animal Day) ежегодно отмечается во всем мире 4 октября.</a></br></br>
+                        Решение отмечать этот день было принято в 1931 году во Флоренции (Италия) 
+                        на проходившем там международном конгрессе сторонников движения в защиту природы. 
+                        День животных установлен с целью повышения осознания общественностью необходимости 
+                        защиты окружающей среды, повышения активности в...
+					</p>
+				</figure>
+            </div>
+            <div class = "tablo">
+				<figure>
+					<img name = "dog" src="zlo.png" width="250" height="250" align="right">
+					<p>
+                        <a href="https://ria.ru/20210928/beshenstvo-1752162912.html">
+                        В Подмосковье сокращается количество случаев бешенства животных. </a></br></br>
+                        МОСКВА, 28 сен — РИА Новости. На 75% уменьшилось количество случаев бешенства животных 
+                        в Подмосковье с начала 2021 года, сообщает пресс-служба министерства сельского 
+                        хозяйства региона. </br>
+                        28 сентября в России отмечается День борьбы с бешенством.
+                        
+					</p>
+				</figure>
+            </div>
+			<a = href="#" id="size-12">12</a>
+			<a = href="#" id="size-14">14</a>
+			<a = href="#" id="size-16">16</a>
+
+			<div class = "text">
+				<p>© 2021, Добрые руки. Все права защищены.</p>
+			</div>
+		</div>
+
+		<script>
+			var size12 = makeSizer(12,198,15,600);
+			var size14 = makeSizer(14,231,20,700);
+			var size16 = makeSizer(16,340,30,1030);
+			
+			document.getElementById('size-12').onclick = size12;
+			document.getElementById('size-14').onclick = size14;
+			document.getElementById('size-16').onclick = size16;
+
+			var logo_img = document.getElementById('logo');
+			var n_img = document.getElementById('nazad');
+			var cont = document.getElementById('cont');
+			var dog_img = document.getElementsByName('dog');
+
+			function makeSizer(size,heightMax,heightMin,width){
+				return function(){
+					document.body.style.fontSize = size + 'px';
+					logo_img.width = heightMin;
+					logo_img.height = heightMin;
+					n_img.width = heightMin;
+					n_img.height = heightMin;
+		    		cont.style.width = width + 'px';
+					for (var i = 0; dog_img.length; i++){
+		    			dog_img[i].width = heightMax;
+    					dog_img[i].height = heightMax;
+					}
+				};
+			}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Добрые руки</title>
+		<link href="Acss.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<logo>
+			<figure>
+				<h1>ДОБРЫЕ 
+					<img src="logo.png" width="35" height="35"/> 
+					РУКИ
+				</h1>
+			</figure>
+		</logo>
+		<div class = "container">
+			<div class = "text">
+				<figure>
+					<h2>
+                        <a href="priut.html"><img src="nazad.png" width="30" height="30"></a> Животные, обитающие в нашем доме
+                    </h2>
+				</figure>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<p><img src="iskorka.png" width="300" height="300"></p>
+					<h2>Искорка <img src="zh.png" width="30" height="30"></h2>
+					<p>1 год</p>
+				</div>
+				<div class = "chtoto">
+					<p><img src="loki.png" width="300" height="300"></p>
+					<h2>Локи <img src="m.png" width="30" height="30"></h2>
+					<p>2 года</p>
+				</div>
+				<div class = "chtoto">
+					<p><img src="bezzubik.png" width="300" height="300"></p>
+					<h2>Беззубик <img src="m.png" width="30" height="30"></h2>
+					<p>6 лет</p>
+				</div>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<p><img src="strela.png" width="300" height="300"></p>
+					<h2>Стрелок <img src="m.png" width="30" height="30"></h2>
+					<p>4 года</p>
+				</div>
+				<div class = "chtoto">
+					<p><img src="teftelka.png" width="300" height="300"></p>
+					<h2>Тефтелька <img src="zh.png" width="30" height="30"></h2>
+					<p>3 года</p>
+				</div>
+				<div class = "chtoto">
+					<p><img src="kostochka.png" width="300" height="300"></p>
+					<h2>Косточка <img src="zh.png" width="30" height="30"></h2>
+					<p>4 года</p>
+				</div>
+			</div>
+			<div class = "tablo">
+                <div class = "chtoto">
+					<p><img src="dik.png" width="300" height="300"></p>
+					<h2>Дик <img src="m.png" width="30" height="30"></h2>
+					<p>1 год</p>
+				</div>
+            </div>
+		
+			<div class = "text">
+				<p>© 2021, Добрые руки. Все права защищены.</p>
+			</div>
+		</div>
+	</body>
+</html>

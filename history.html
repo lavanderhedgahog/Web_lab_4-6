@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>Добрые руки</title>
+		<link href="Acss.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<logo>
+			<figure>
+				<h1>ДОБРЫЕ 
+					<img id = "logo" src="logo.png" width="35" height="35"/> 
+					РУКИ
+				</h1>
+			</figure>
+		</logo>
+		<div class = "container" id = "cont">
+			<div class = "text">
+				<figure>
+					<h2>
+                        <a href="priut.html"><img id = "nazad" src="nazad.png" width="30" height="30"></a> Я дома
+                    </h2>
+				</figure>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<p><img name = "dog" src="1.jpg" width="340" height="340"></p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = "dog" src="2.jpg" width="340" height="340"></p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = "dog" src="3.jpg" width="340" height="340"></p>
+				</div>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<p><img name = "dog" src="4.jpg" width="340" height="340"></p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = "dog" src="5.jpg" width="340" height="340"></p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = "dog" src="6.jpg" width="340" height="340"></p>
+				</div>
+			</div>
+            <div class = "tablo">
+				<div class = "chtoto">
+					<p><img name = "dog" src="7.jpg" width="340" height="340"></p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = "dog" src="8.jpg" width="340" height="340"></p>
+				</div>
+			</div>
+
+			
+			<a = href="#" id="size-12">12</a>
+			<a = href="#" id="size-14">14</a>
+			<a = href="#" id="size-16">16</a>
+
+			<div class = "text">
+				<p>© 2021, Добрые руки. Все права защищены.</p>
+			</div>
+		</div>
+
+		<script>
+			var size12 = makeSizer(12,198,15,600);
+			var size14 = makeSizer(14,231,20,700);
+			var size16 = makeSizer(16,340,30,1030);
+			
+			document.getElementById('size-12').onclick = size12;
+			document.getElementById('size-14').onclick = size14;
+			document.getElementById('size-16').onclick = size16;
+
+			var logo_img = document.getElementById('logo');
+			var n_img = document.getElementById('nazad');
+			var cont = document.getElementById('cont');
+			var dog_img = document.getElementsByName('dog');
+
+			function makeSizer(size,heightMax,heightMin,width){
+				return function(){
+					document.body.style.fontSize = size + 'px';
+					logo_img.width = heightMin;
+					logo_img.height = heightMin;
+					n_img.width = heightMin;
+					n_img.height = heightMin;
+		    		cont.style.width = width + 'px';
+					for (var i = 0; dog_img.length; i++){
+		    			dog_img[i].width = heightMax;
+    					dog_img[i].height = heightMax;
+					}
+				};
+			}
+			</script>
+	</body>
+</html>

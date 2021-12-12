@@ -1,0 +1,26 @@
+body {
+	font-family: courier new;
+	font-size: 15pt;
+
+	background-size: 100% auto;
+}
+.verh {
+	background-color: rgb(255, 250, 205);
+	height: 440px;
+	padding: 1px;
+}
+.container {
+	margin: 0 auto;
+	width: 1030px;
+}
+.tablo {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	display: flex;
+}
+.chtoto{
+	width: 33%;
+}
+.text {
+	background-color: rgb(255, 250, 205);
+}

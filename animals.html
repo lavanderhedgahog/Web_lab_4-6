@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>Добрые руки</title>
+		<link href="Acss.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<logo>
+			<figure>
+				<h1>ДОБРЫЕ 
+					<img id = "logo" src="logo.png" width="35" height="35"/> 
+					РУКИ
+				</h1>
+			</figure>
+		</logo>
+		<div class = "container" id = "cont">
+			<div class = "text">
+				<figure>
+					<h2>
+                        <a href="priut.html"><img id = "nazad" src="nazad.png" width="30" height="30"></a> Животные, обитающие в нашем доме
+                    </h2>
+				</figure>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<p><img name = 'dog' src="iskorka.png" width="300" height="300"></p>
+					<h2>Искорка <img name = 'pol' src="zh.png" width="30" height="30"></h2>
+					<p>1 год</p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = 'dog' src="loki.png" width="300" height="300"></p>
+					<h2>Локи <img name = 'pol' src="m.png" width="30" height="30"></h2>
+					<p>2 года</p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = 'dog' src="bezzubik.png" width="300" height="300"></p>
+					<h2>Беззубик <img name = 'pol' src="m.png" width="30" height="30"></h2>
+					<p>6 лет</p>
+				</div>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<p><img name = 'dog' src="strela.png" width="300" height="300"></p>
+					<h2>Стрелок <img name = 'pol' src="m.png" width="30" height="30"></h2>
+					<p>4 года</p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = 'dog' src="teftelka.png" width="300" height="300"></p>
+					<h2>Тефтелька <img name = 'pol' src="zh.png" width="30" height="30"></h2>
+					<p>3 года</p>
+				</div>
+				<div class = "chtoto">
+					<p><img name = 'dog' src="kostochka.png" width="300" height="300"></p>
+					<h2>Косточка <img name = 'pol' src="zh.png" width="30" height="30"></h2>
+					<p>4 года</p>
+				</div>
+			</div>
+			<div class = "tablo">
+                <div class = "chtoto">
+					<p><img name = 'dog' src="dik.png" width="300" height="300"></p>
+					<h2>Дик <img name = 'pol' src="m.png" width="30" height="30"></h2>
+					<p>1 год</p>
+				</div>
+            </div>
+
+			<a = href="#" id="size-12">12</a>
+			<a = href="#" id="size-14">14</a>
+			<a = href="#" id="size-16">16</a>
+
+			<div class = "text">
+				<p>© 2021, Добрые руки. Все права защищены.</p>
+			</div>
+		</div>
+
+		<script>
+			var size12 = makeSizer(12,150,15,500);
+			var size14 = makeSizer(14,200,20,700);
+			var size16 = makeSizer(16,300,30,1030);
+			
+			document.getElementById('size-12').onclick = size12;
+			document.getElementById('size-14').onclick = size14;
+			document.getElementById('size-16').onclick = size16;
+
+			var cont = document.getElementById('cont');
+			var l_img = document.getElementById('logo');
+			var n_img = document.getElementById('nazad');
+			var d_img = document.getElementsByName('dog');
+			var p_img = document.getElementsByName('pol');
+
+			function makeSizer(size,heightMax,heightMin,width){
+				return function(){
+					document.body.style.fontSize = size + 'px';
+		    		cont.style.width = width + 'px';
+					l_img.width = heightMin;
+					l_img.height = heightMin;
+					n_img.width = heightMin;
+					n_img.height = heightMin;
+					for (var i = 0; d_img.length; i++){
+		    			d_img[i].width = heightMax;
+    					d_img[i].height = heightMax;
+		    			p_img[i].width = heightMin;
+    					p_img[i].height = heightMin;
+					}
+				};
+			}
+			</script>
+	</body>
+
+</html>

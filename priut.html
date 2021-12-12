@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Добрые руки</title>
+		<link href="Acss.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<logo>
+			<figure>
+				<h1>ДОБРЫЕ 
+					<img id = "logo" src="logo.png" width="35" height="35"/> 
+					РУКИ
+				</h1>
+			</figure>
+		</logo>
+		<div class = "container" id = "cont">
+			<div class = "verh" id = "verh">
+				<figure>
+					<img id = "priut" src="priut.jpg" width="400" height="400" align="left">
+					<p>
+					Согласно документу подготовленному Ассоциацией «Благополучие животных», 
+					численность безнадзорных животных в России составляет от 600 до 700 тысяч. 
+					Проект <strong>«Добрые руки»</strong> представляет собой временный дом для собак и кошек, 
+					которым некуда вернуться. Наша команда создает для подопечных максимально 
+					комфортные условия жизни. Мы лечим, заботимся и делаем всё, что в наших силах, 
+					чтобы дать животным шанс стать по-настоящему домашними.<br/>Возможно именно здесь Вы найдете 
+					любящего четвероногого друга.
+					</p>
+				</figure>
+			</div>
+			<div class = "tablo">
+				<div class = "chtoto">
+					<a href="novosti.html">
+						<p><img name = "dog" src="psi.jpg" width="300" height="300"></p>
+						<h2>Новости</h2>
+					</a>
+				</div>
+				<div class = "chtoto">
+					<a href="history.html">
+						<p><img name = "dog" src="pesikot.jpg" width="300" height="300"></p>
+						<h2>Хорошие истории</h2>
+					</a>
+				</div>
+				<div class = "chtoto">
+					<a href="animals.html">
+						<p><img name = "dog" src="lapa.jpg" width="300" height="300"></p>
+						<h2>Забрать домой</h2>
+					</a>
+				</div>
+			</div>
+		
+			
+			<a = href="#" id="size-12">12</a>
+			<a = href="#" id="size-14">14</a>
+			<a = href="#" id="size-16">16</a>
+
+			<div class = "text">
+				<p>© 2021, Добрые руки. Все права защищены.</p>
+			</div>
+		</div>
+
+		<script>
+			var size12 = makeSizer(12,150,15,600);
+			var size14 = makeSizer(14,200,20,700);
+			var size16 = makeSizer(16,300,30,1030);
+			
+			document.getElementById('size-12').onclick = size12;
+			document.getElementById('size-14').onclick = size14;
+			document.getElementById('size-16').onclick = size16;
+
+			var logo_img = document.getElementById('logo');
+			var cont = document.getElementById('cont');
+			var verh = document.getElementById('verh');
+			var priut_img = document.getElementById('priut');
+			var dog_img = document.getElementsByName('dog');
+
+			function makeSizer(size,heightMax,heightMin,width){
+				return function(){
+					document.body.style.fontSize = size + 'px';
+					logo_img.width = heightMin;
+					logo_img.height = heightMin;
+		    		cont.style.width = width + 'px';
+		    		verh.style.height = heightMax + 130 + 'px';
+					priut_img.width = heightMax + 100;
+					priut_img.height = heightMax + 100;
+					for (var i = 0; dog_img.length; i++){
+		    			dog_img[i].width = heightMax;
+    					dog_img[i].height = heightMax;
+					}
+				};
+			}
+			</script>
+	</body>
+</html>
